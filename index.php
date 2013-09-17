@@ -15,11 +15,12 @@ $app->get('/test/', function () {
    echo "TEST2!";
 });
 
-/*$app->get('/hello/:name', 'helloName');
+$app->get('/hello/:name', 'helloName');
 
-function helloName($name) {
-    echo "Ime: $name <br />";
-}*/
+function helloName($name)
+{
+   echo "Ime: $name <br />";
+}
 
 $app->run();
 ?>
