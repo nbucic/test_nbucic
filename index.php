@@ -19,7 +19,7 @@ $app->get('/hello/:name', 'helloName');
 
 function helloName($name)
 {
-   echo "Ime: $name <br />";
+   echo "Ime2: $name <br />";
 }
 
 $app->run();
