@@ -9,8 +9,8 @@ $print_r_pre = function ($elem) {
    print "</pre>";
 };
 
-$app->get('/', function ($name) {
-   echo "Hello, $name";
+$app->get('/', function () {
+   echo "Hello, TESTING_SERVER!";
 });
 
 $app->get('/info/', function () use ($app, $print_r_pre) {
