@@ -16,7 +16,7 @@ $app->get('/', function () {
 $app->get('/info/', function () use ($app, $print_r_pre) {
    $print_r_pre($_SERVER);
    print "<br><br>";
-   #print "<br>server_address: {$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}/<br>";
+   print "<br>server_address: http://{$_SERVER['SERVER_NAME']}/<br>";
    $print_r_pre($app);
    print "<br><br>";
    print "EOM";
