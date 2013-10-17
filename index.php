@@ -9,7 +9,7 @@ $print_r_pre = function ($elem) {
    print "</pre>";
 };
 
-$app->get('/hello/:name', function ($name) {
+$app->get('', function ($name) {
    echo "Hello, $name";
 });
 
@@ -23,13 +23,6 @@ $app->get('/info/', function () use ($app, $print_r_pre) {
 $app->get('/test/', function () {
    echo "TEST2!";
 });
-
-$app->get('/hello/:name', 'helloName');
-
-function helloName($name)
-{
-   echo "Ime2: $name <br />";
-}
 
 $app->run();
 ?>
